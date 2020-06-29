@@ -1,6 +1,6 @@
 
 %% Helper function for creating sparse tensor Y and D
-function [Y, n, m, c, D, index] = ratings(data)
+function [Y, n, m, c] = ratings(data)
 
 % number of users
 n = max(data(:,1));

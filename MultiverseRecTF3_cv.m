@@ -220,7 +220,7 @@ function [Unew, Mnew, Cnew, Snew] = update(alpha, beta, Ui, Mj, Ck, Fval, Yval, 
     
 end
 
-%% Helper function for creating sparse tensor Y and D
+%% Helper function for creating sparse tensor Y
 function [Y, n, m, c] = ratings(data)
 
 % number of users
