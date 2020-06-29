@@ -1,0 +1,1 @@
+ProductId,UserId,DayOfWeek,Quarter
