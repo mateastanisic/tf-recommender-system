@@ -115,7 +115,7 @@ for cv_iter = 1 : CVO.NumTestSets
         step_error = MAE_4D_train(F, train)
   
         if step_error < 0.1
-            filename = strcat("saved/amazon_cv5_", string(cv_iter) ,"_15_15_3_step_", string(s),".mat");
+            filename = strcat("saved/amazon_4d_cv5_", string(cv_iter) ,"_150000_size_20_20_5_3_step", string(s),".mat");
             save(filename)
             break
         end
@@ -125,7 +125,7 @@ for cv_iter = 1 : CVO.NumTestSets
         toc
 
         %save workspace
-        filename = strcat("saved/amazon_cv5_", string(cv_iter) ,"_15_15_3_step_", string(s),".mat");
+        filename = strcat("saved/amazon_4d_cv5_", string(cv_iter) ,"_150000_size_20_20_5_3_step", string(s),".mat");
         save(filename)
     end
     
